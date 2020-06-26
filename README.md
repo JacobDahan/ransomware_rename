@@ -11,7 +11,10 @@ Remove unwanted ransomware encryption extensions
 `cd /path/to/dir`
 
 ## Check output (optional)
-`find . -type f -name '*.AKO' -exec realpath '{}' \;`
+```bash
+find . -type f -name '*.AKO' -exec realpath '{}' \;               # prints in terminal
+find . -type f -name '*.AKO' -exec realpath '{}' \; > log.txt     # saves log.txt in present working directory
+```
 
 ## Rename
 `find . -type f -name '*.AKO' -exec realpath '{}' \; -exec rename -d ".AKO" {} \;`
