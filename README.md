@@ -22,3 +22,6 @@ find . -type f -name '*.AKO' -exec realpath '{}' \; > log.txt     # saves log.tx
 
 ## Rename
 `find . -type f -name '*.AKO' -exec realpath '{}' \; -exec rename -d ".AKO" {} \;`
+
+## Rename and add permission
+`find . -type f -name '*.AKO' -exec realpath '{}' \; -exec chmod 755 '{}' \; -exec rename -d ".AKO" {} \;`
