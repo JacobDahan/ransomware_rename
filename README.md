@@ -7,6 +7,9 @@ Remove unwanted ransomware encryption extensions
 ## Install rename
 `brew install rename`
 
+## Install coreutils
+`brew install coreutils`
+
 ## Change to top level directory
 `cd /path/to/dir`
 
